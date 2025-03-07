@@ -1,0 +1,257 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--MainColor);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+a.Nav-Link,
+a.Nav-Link:hover,
+a.Nav-Link:visited{
+    padding: 12px 24px;
+    text-decoration: none;
+    color: var(--NavLinkColor);
+    font-size: 24px;
+}
+
+a.Nav-Link:hover{
+    background-color: var(--BackgroundColor);
+    color: var(--Secondary);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size:128px
+}
+
+#Hero{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.HeroImage{
+    object-fit: cover;
+    width: 100%;
+    height: 672px;
+    filter: brightness(0.4);
+    transition: 0.6s ease;
+}
+
+#Hero:hover .HeroImage{
+    /*filter: brightness(0.7);*/
+    transition: 0.6s ease;
+}
+
+.HeroTextWrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 128px;
+    text-align: end;
+    color: var(--TextContrast);
+}
+
+.HeroTextWrapper h3{
+    width: 50%;
+    align-self: flex-end;
+}
+
+.WrapperA{
+    display: flex;
+    flex-direction: column;
+    padding: 128px 64px;
+    background-color: var(--MainColor);
+    color: var(--TextContrast);
+}
+
+.WrapperA h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.WrapperA h2.Important-Header{
+    font-size: 96px;
+}
+
+.WrapperA h2.Important-Header-Smaller{
+    font-size: 48px;
+}
+
+.ListA{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px;
+    align-self: center;
+}
+
+.ListItemA{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 128px;
+}
+
+.ListItemA i{
+    color: var(--Secondary);
+}
+
+
+.ListA p{
+    font-size: 22px;
+    padding-left: 12px;
+}
+
+.MarkedText{
+    color: var(--Secondary);
+}
+
+.ImageA{
+    height: 256px;
+    width: 128px;
+    object-fit: contain;
+}
+
+.Line{
+    content: "";
+    height: 256px;
+    width: 12px;
+    border-radius: 24px;
+    background-color: var(--Teritary);
+}
+
+
+.WrapperB,
+.WrapperC{
+    display: flex;
+    flex-direction: row;
+    padding: 128px 64px;
+    background-color: var(--BackgroundColorAlternate);
+    color: var(--Text);
+    justify-content: space-evenly;
+}
+
+.WrapperB h2{
+    font-size: 42px;
+}
+
+.WrapperB p{
+    font-size: 24px;
+}
+
+.WrapperC{
+    background-color: var(--BackgroundColor);
+    color: var(--TextAlternate);
+}
+
+.WrapperC h2{
+    font-size: 42px;
+}
+
+.WrapperC p{
+    font-size: 24px;
+}
+
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.Form h2{
+    margin-top: 0px;
+    padding: 24px;
+    background-color: var(--BackgroundColor);
+    color: var(--TextContrast);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.Row-Wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 4px 6px;
+}
+
+.Column-Wrapper-A,
+.Column-Wrapper-B,
+.Column-Wrapper-C,
+.Column-Wrapper-D{
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    padding: 12px;
+}
+
+.Column-Wrapper-B{
+    width: 100%;
+}
+
+.Column-Wrapper-C{
+    width: 128px;
+}
+
+.Column-Wrapper-D{
+    width: 25%;
+    border-radius: 24px;
+}
+
+.Button-A{
+    padding: 6px;
+    background-color: var(--BackgroundColor);
+    color: var(--TextContrast);
+    border: none;
+    border-radius: 6px;
+    font-size: large;
+}
+
+.Button-A:hover{
+    cursor: pointer;
+}
+
+label{
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.Heading-Smaller{
+    font-size: 32px;
+}
+
+.Paragraph-Regular{
+    font-size: 18px;
+}
